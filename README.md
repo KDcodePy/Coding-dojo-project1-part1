@@ -1,2 +1,6 @@
 # Coding-dojo-project1-part1
-introduction to github repo
+  - Kim Hazed Delfino
+## Loading Data
+## Data Cleaning
+## Exploratory Visuals
+## Explanatory Visuals
