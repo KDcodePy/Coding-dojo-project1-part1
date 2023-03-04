@@ -1,5 +1,5 @@
-# Coding-dojo-project1-part1
-  - Kim Hazed Delfino
+# Sales-prediction
+  
 ## Loading Data
 ## Data Cleaning
 ## Exploratory Visuals
