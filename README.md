@@ -55,7 +55,7 @@ Recommendations:
 
 ---
   
-## Project Revisited Plots
+## Model Performance Analysis Plots
 ![](https://github.com/KDcodePy/Sales-prediction/blob/main/image/Largest_Coefficient.png)
 The 3 largest coefficients are for
  - "Outlet_Identifier_OUT027" for every item outlet_027 have, their predicted  Item_outlet_sale Increases by $588.235 
@@ -70,7 +70,16 @@ What were your 5 most important features?
     - Item_Visibility - somewhat important
     - Item_Weight - somewhat important
     - Outlet_Type_Supermarket Type3 - somewhat important
+
+ ![](https://github.com/KDcodePy/Sales-prediction/blob/main/image/SHAP_feature_importance.png)
+ - As we can see above, SHAP's Top-2 importances are similar with built-in random forest importances but the rest are not the same. 
   
+![](https://github.com/KDcodePy/Sales-prediction/blob/main/image/SHAPS_dot.png)
+- Reading SHAP Top3 Summary Plots
+    - "Item_MRP" - Higher(red) item_MRP have positive impact on our model and opposite can be said to lower(blue) feature value item_MRP
+    - "Outlet_Type_Grocery Store" - Items that are sold under outlet_type Grocery store have negative impact on our model output which make sense because based on our EDA Grocery store has the smallest distribution relative to other outlet_type
+    - "Outlet_Type_Supermarket Type3" - the opposite of Grocery store, Supermarket Type3 holds the top spot of highest avg item_outlet_sales compared to other outlet_type based on our EDA which explain why it has high possitive impact on our model output
+
 ---
 
 ### For further information
