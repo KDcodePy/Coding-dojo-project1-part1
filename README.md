@@ -52,7 +52,24 @@ Recommendations:
  Limitations & Next Steps:
  - the use of `simple` machine learning model limits our capability to fine-tune our models to better understand patterns in our dataset
   - next Step - Explore different and more complex machine learning models like `RandomForest Regressor `, `Bagging Regressor` , `Elastic_Net`to get a better feel and benchmark different model performance to one another.
+
+---
   
+## Project Revisited Plots
+![](https://github.com/KDcodePy/Sales-prediction/blob/main/image/Largest_Coefficient.png)
+The 3 largest coefficients are for
+ - "Outlet_Identifier_OUT027" for every item outlet_027 have, their predicted  Item_outlet_sale Increases by $588.235 
+ - "Outlet_Type_Supermarket Type3" items sold in Supermarket Type3 increases the Item_outlet_sale average by $588.235 (similar value to OUT027 because OUT027 is the only Supermarket Type3 in the Dataset)
+ - "Outlet_Size_Medium" Items sold in Outlet size medium adds Item_Outlet_sale avg by $421.406
+
+![](https://github.com/KDcodePy/Sales-prediction/blob/main/image/top10_most_important_features.png)
+What were your 5 most important features?
+- The top 5 most important features are:
+    - item_MRP - single most important
+    - Outlet_Type_Grocery Store - 2nd most important
+    - Item_Visibility - somewhat important
+    - Item_Weight - somewhat important
+    - Outlet_Type_Supermarket Type3 - somewhat important
   
 ---
 
