@@ -55,7 +55,7 @@ Recommendations:
 
 ---
   
-## Model Performance Analysis Plots
+## Model Observation Plots
 ![](https://github.com/KDcodePy/Sales-prediction/blob/main/image/Largest_Coefficient.png)
 The 3 largest coefficients are for
  - "Outlet_Identifier_OUT027" for every item outlet_027 have, their predicted  Item_outlet_sale Increases by $588.235 
@@ -79,6 +79,30 @@ What were your 5 most important features?
     - "Item_MRP" - Higher(red) item_MRP have positive impact on our model and opposite can be said to lower(blue) feature value item_MRP
     - "Outlet_Type_Grocery Store" - Items that are sold under outlet_type Grocery store have negative impact on our model output which make sense because based on our EDA Grocery store has the smallest distribution relative to other outlet_type
     - "Outlet_Type_Supermarket Type3" - the opposite of Grocery store, Supermarket Type3 holds the top spot of highest avg item_outlet_sales compared to other outlet_type based on our EDA which explain why it has high possitive impact on our model output
+
+![](https://github.com/KDcodePy/Sales-prediction/blob/main/image/Lime_plot_example1.png)
+- As we can see in the LIME explanation above, there were many factors contributing to the predicted Item_Outlet_sale, such as:
+    - Is the Outlet type - Grocery store (False - positive impact)
+    - Item_MRP (low MRP - negative impact)
+    - Is the item sold by OUT027 (True - positive impact)
+
+![](https://github.com/KDcodePy/Sales-prediction/blob/main/image/Force_plot_example1.png)
+- Here we can see how much each feature affects the model prediction for example Row 39
+    -  54.01(min)~7562.66(max)
+    - Item_MRP has the most influence driving our prediction to be on the lower-end relative to base value due to having lower Item_MRP value
+    - Outlet_Identifier_OUT027 and Outlet_Type_Supermarket Type3 have the 2nd and 3rd most influence with our model prediction respectively, Pushing our model to stay closer to the base value offsetting the negative impact of item_MRP.
+ 
+
+![](https://github.com/KDcodePy/Sales-prediction/blob/main/image/Lime_plot_example2.png)
+- As we can see in the LIME explanation above, there were many factors contributing to the predicted Item_Outlet_sale, such as:
+    - Is the Outlet type - Grocery store (True - Negative impact)
+    - Item_MRP (low MRP - negative impact)
+    - Is the item sold by OUT027 (False - Negative impact)
+
+![](https://github.com/KDcodePy/Sales-prediction/blob/main/image/Force_plot_example2.png)
+- Here we can see how much each feature affects the model prediction for example Row 96:
+    - 52.98(min)~7575.22(max) / Predicted Value : 157.18
+    - Outlet_Type_Grocery Store has the most influence driving our prediction to be on the lower-end relative to base value due to the item being sold at a grocery store and having lower Item_MRP value
 
 ---
 
